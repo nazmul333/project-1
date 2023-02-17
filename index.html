@@ -11,24 +11,51 @@
 <!-- from -->
 
 <body>
-    <from action="">
-        <p>Name:<input placeholder="Enter your name" type="text"></p>
-        <p>telephone:<input type="tel" name="" id=""></p>
-        <p>Email:<input pattern="" type="email" name="" id=""></p>
+    <form>
+        <div class="container">
+            <center>
+                <h1>Registration From</h1>
+            </center>
+            <hr>
+            <label for="firstname">
+                firstname
+            </label>
+            <input type="text" id="firstname" name="ftname" placeholder="firstname" size="20" readonly>>
+            <label for="middlename">
+                middlename:
+            </label>
+            <input type="text" id="lastname" name="ltname" placeholder="middlename" size="15" required>
+            <label for="lastname">
+                lastname:
+            </label>
+            <input type="text" id="lastname" name="lastname" placeholder="lastname" size="15" required>
+            <label for="gender">
+                Gender :
+            </label>
+            <br>
+            <input type="radio" id="gender" value="Male" name="gender" checked> Male
+            <input type="radio" id="gender" value="Female" name="gender"> Female
+            <input type="radio" id="gender" value="Other" name="gender"> Other
+        </div>
+        <label for="phone">
+            phone:
+        </label>
+        <input type="text" name="country code" placeholder="country code" value="+880" size="2" />
+        <input type="text" id="Phone" name="phone" placeholder="phone no." size="10" / required>
+        <label for="Email">
+            Email
+        </label>
+        <input type="text" id="email" placeholder="Enter Email" name="email" required>
+        <button type="submit" value="submit">Submit</button>
+        <button type="reset" value="submit">Reset</button>
 
-        <fieldset>
-            <legend>select your path</legend>
-            <p>
-                <lable for="choti"><input type="checkbox" name="pitha" id="chitoi">chitoi</lable>
-            </p>
-        </fieldset>
-        <fieldset>
-            <legend>Select you Vorta</legend>
-            <p><label for="shutki"><input type="checkbox" name="" id="shutki">Shutki</label></p>
-            <p><label for="sorisha"><input type="checkbox" name="" id="sorisha">Sorisha</label></p>
-        </fieldset>
-        <p><label for="">Special Instruction: <textarea name="" id="" cols="30" rows="10"></textarea></label></p>
-        <button type="submit">Submit Your Order</button>
-    </from>
+
+
+
+    </form>
+
+
+
+
 
 </html>
